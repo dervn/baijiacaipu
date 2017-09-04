@@ -1,0 +1,10 @@
+{% extends "master.html" %}
+
+{% block title%} Time Plus {% endblock %}
+
+{% block content %}
+
+{% include 'nav.html' %}
+In {{ offset }} hour(s), it will be {{ dt | date:"Y-m-h H:i:s" }}
+
+{% endblock %}

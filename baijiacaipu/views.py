@@ -1,10 +1,8 @@
 import datetime
+from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response
 
 def index(arg):
-    return HttpResponse("index")
-
-def hello(arg):
     return HttpResponse("Hello World!")
 
 def current_time(arg):
